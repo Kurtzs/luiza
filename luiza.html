@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luiza • Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* Paleta e fontes */
+    :root {
+      --rosa-claro: #fdf1f6;
+      --rosa-principal: #e49ab0;
+      --rosa-destaque: #c75d86;
+      --cinza: #444;
+      --fundo: #fffdfd;
+      --fonte-titulo: 'Playfair Display', serif;
+      --fonte-texto: 'Poppins', sans-serif;
+    }
+
+    /* Reset e base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--fonte-texto);
+      background-color: var(--fundo);
+      color: var(--cinza);
+      line-height: 1.8;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--rosa-principal);
+      transition: 0.3s;
+    }
+
+    a:hover {
+      color: var(--rosa-destaque);
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: var(--rosa-claro);
+      text-align: center;
+      padding: 80px 20px 40px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header h1 {
+      font-family: var(--fonte-titulo);
+      font-size: 3.5rem;
+      color: var(--rosa-destaque);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--rosa-principal);
+      margin-top: 10px;
+    }
+
+    /* Conteúdo principal */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2 {
+      font-family: var(--fonte-titulo);
+      font-size: 2rem;
+      color: var(--rosa-destaque);
+      margin-bottom: 20px;
+      border-left: 4px solid var(--rosa-principal);
+      padding-left: 12px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 800px;
+    }
+
+    /* Projetos */
+    .projetos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .projeto {
+      background: #fff;
+      border: 1px solid #f0d9e3;
+      padding: 20px;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+    }
+
+    .projeto:hover {
+      transform: translateY(-5px);
+      border-color: var(--rosa-principal);
+    }
+
+    .projeto h3 {
+      color: var(--rosa-destaque);
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: var(--rosa-claro);
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+      color: #a57f96;
+      border-top: 1px solid #f0d9e3;
+      animation: fadeIn 1s ease-out;
+    }
+
+    /* Animações */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Responsividade */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Luiza</h1>
+    <p>Designer & Desenvolvedora de experiências elegantes 🌸</p>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção sobre mim -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou Luiza, uma designer apaixonada por experiências digitais que combinam estética e funcionalidade. Crio interfaces com atenção aos detalhes, buscando sempre o equilíbrio entre beleza e usabilidade. Trabalho com web design, UI/UX e desenvolvimento front-end, sempre colocando o usuário em primeiro lugar.</p>
+    </section>
+
+    <!-- Seção de projetos -->
+    <section id="projetos">
+      <h2>Projetos em Destaque</h2>
+      <div class="projetos">
+        <div class="projeto">
+          <h3>🌿 Nature Blog</h3>
+          <p>Um blog sobre estilo de vida natural e sustentável, com design suave e amigável.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="projeto">
+          <h3>🎨 Galeria de Arte</h3>
+          <p>Galeria visual com foco em artistas femininas, layout fluido e minimalista.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="projeto">
+          <h3>📖 Editorial Beauty</h3>
+          <p>Website de uma revista digital sobre estética e autocuidado com foco editorial.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="projeto">
+          <h3>💼 Portfólio Moderno</h3>
+          <p>Site portfólio com design monocromático e foco em UX/UI contemporâneo.</p>
+          <a href="#">Ver projeto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>💌 Email: <a href="mailto:luiza@email.com">luiza@email.com</a></p>
+      <p>📷 Instagram: <a href="https://instagram.com/luiza.design" target="_blank">@luiza.design</a></p>
+      <p>🌐 Website: <a href="#">www.luizaportfolio.com</a></p>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Feito com carinho por Luiza ✨ &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
